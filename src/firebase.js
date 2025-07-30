@@ -3,12 +3,12 @@ import "firebase/compat/auth";
 import "firebase/compat/firestore";
 
 const firebaseConfig = {
-    apiKey: "AIzaSyDqST77FtPbLFPeSelP0zLUrP7h_JHq4AI",
-    authDomain: "movie-app-a87be.firebaseapp.com",
-    projectId: "movie-app-a87be",
-    storageBucket: "movie-app-a87be.appspot.com",
-    messagingSenderId: "305278950512",
-    appId: "1:305278950512:web:6630e6251cd315df9c68b5"
+    apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+    authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+    projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+    storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+    messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+    appId: import.meta.env.VITE_FIREBASE_APP_ID,
 };
 
 const firebaseApp = firebase.initializeApp(firebaseConfig);
@@ -16,4 +16,4 @@ const firebaseApp = firebase.initializeApp(firebaseConfig);
 const db = firebaseApp.firestore();
 const auth = firebase.auth();
 
-export { db, auth }; 
+export { db, auth };
