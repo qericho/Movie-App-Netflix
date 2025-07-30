@@ -23,7 +23,7 @@ const LoginScreen = () => {
             ></div>
 
             {/* Logo */}
-            <div className='w-[150px] object-cover fixed left-3 top-0 z-10'>
+            <div className='w-[100px] md:w-[150px] object-cover fixed left-3 top-2 md:top-0 z-10'>
                 <Link to="/">
                     <img className='w-full' src={Logo} alt="Logo" />
                 </Link>
@@ -33,7 +33,7 @@ const LoginScreen = () => {
             <div className='fixed top-5 right-5 z-10'>
                 <button onClick={() => SetSignIn(true)}
                     className='text-[16px] text-white font-semibold rounded
-                w-[100px] h-[40px] bg-red-800 hover:bg-red-900 cursor-pointer'>
+                w-[80px] h-[35px] md:w-[100px] md:h-[40px] bg-red-800 hover:bg-red-900 cursor-pointer'>
                     Sign In
                 </button>
             </div>

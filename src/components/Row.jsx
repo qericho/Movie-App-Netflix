@@ -10,7 +10,7 @@ const Row = ({ title, req, isLarge }) => {
         return str.length > maxLength ? str.slice(0, maxLength - 1) + "…" : str;
     };
 
-    if (loading) return <div className="text-white text-center">Loading...</div>;
+    if (loading) return <div className="text-white text-center"></div>;
     if (error) return <div className="text-red-500 text-center">Failed to fetch movies.</div>;
 
     return (
